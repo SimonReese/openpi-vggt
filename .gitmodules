@@ -1,0 +1,6 @@
+[submodule "openpi"]
+	path = openpi
+	url = git@github.com:SimonReese/openpi.git
+[submodule "vggt-omega"]
+	path = vggt-omega
+	url = git@github.com:SimonReese/vggt-omega.git
