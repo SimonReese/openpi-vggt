@@ -5,13 +5,15 @@ description = "OpenPi & VGGT-Omega"
 requires-python = ">=3.11" #,<3.12"
 dependencies = [
 	"openpi",
-	"vggt-omega"
+	"vggt-omega",
+    "datasets>=2.19.0,<4.0.0"
 ]
 
 [tool.uv]
 override-dependencies = [
 	"ml-dtypes==0.4.1", 
-	"tensorstore==0.1.74"
+	"tensorstore==0.1.74",
+    "rerun-sdk @ file:///nfsd/iaslab4/Users/perarosimo/source/openpi-vggt/rerun-sdk-dummy"
 ]
 
 [tool.uv.workspace]
@@ -24,4 +26,4 @@ members = [
 [tool.uv.sources]
 openpi = {workspace = true}
 vggt-omega = {workspace = true}
-
+rerun-sdk = { path = "./rerun-sdk-dummy" }
