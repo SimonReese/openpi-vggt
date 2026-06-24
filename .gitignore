@@ -1,3 +1,5 @@
 datasets/*
 assets/*
 checkpoints
+wandb/*
+vggt-1b
